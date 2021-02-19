@@ -9,9 +9,6 @@ public class ServidorWeb {
 
     public static void main(String[] args) {
         port(getPort());
-
-
-
         get("/calc",(req,res)->{
             FachadaCalc fachada = new FachadaCalc();
             String valor = req.queryParams("valor");
